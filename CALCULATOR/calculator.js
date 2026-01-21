@@ -9,12 +9,10 @@ let botones = document.getElementById('botones');
 for(let i of botones.children){
     if(i.textContent!='C' && i.textContent!='='){
         i.addEventListener('click', function(e){
-            e.preventDefault();
             input.value += i.textContent;
         });
     }else if(i.textContent=='C'){
         i.addEventListener('click', function(e){
-            e.preventDefault();
             input.value = '';
         });
     }else{
